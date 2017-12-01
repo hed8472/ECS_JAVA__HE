@@ -37,8 +37,6 @@ public class UserInputOfData
 		System.out.println("Name:  " + LastN + ", " + FirstN);
 		System.out.println("GPA    " + GPA);
 		System.out.println("Grade: " + grade);
-		keyboard.close();
-
 	}
 	
 }
