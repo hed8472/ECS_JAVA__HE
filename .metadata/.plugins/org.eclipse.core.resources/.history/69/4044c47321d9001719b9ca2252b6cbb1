@@ -64,7 +64,7 @@ public class ALittleQuiz
 			System.out.println("What are you doing, Mantine Surf? ");
 		}
 		
-		System.out.println("Overall, you got " + c + " question(s) correct. Thanks for playing! [I guess] ");
+		System.out.println("Overall, you got " + c + " questions correct. Thanks for playing! [I guess] ");
 		keyboard.close();
 	}
 	
