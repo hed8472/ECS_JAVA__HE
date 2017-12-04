@@ -42,7 +42,6 @@ public class SpaceBoxing
 		{
 			System.out.println("Your weight would be " + (weight_earth*1.23) + " pounds on that planet.");
 		}
-		keyboard.close();
 	}
 	
 }
