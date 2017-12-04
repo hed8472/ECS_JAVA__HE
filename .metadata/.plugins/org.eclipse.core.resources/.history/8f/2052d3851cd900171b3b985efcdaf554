@@ -32,7 +32,6 @@ public class HowOldSpecifically
 		{
 			System.out.println("You can pretty much do whatever you want, " + name + ".");
 		}
-		keyboard.close();
 	}
 	
 }
