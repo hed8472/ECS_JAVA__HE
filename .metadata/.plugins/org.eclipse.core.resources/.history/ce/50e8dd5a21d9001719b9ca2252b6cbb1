@@ -7,8 +7,8 @@ public class ALittleQuiz
 	{
 		Scanner keyboard = new Scanner(System.in);
 		
-		int ans, c;
-		c=0;
+		int ans;
+		
 		System.out.println("What is the capital of Alaska?");
 		System.out.println("    1) Melbourne");
 		System.out.println("    2) Anchorage");
@@ -25,7 +25,6 @@ public class ALittleQuiz
 		if (ans == 3) 
 		{
 			System.out.println("<o/ <o/ <o/");
-			c=c+1;
 		}
 		System.out.println("What's 9 + 10?");
 		System.out.println("    1) 21");
@@ -39,7 +38,6 @@ public class ALittleQuiz
 		if (ans == 2) 
 		{
 			System.out.println("Nerd. Correct, i guess... ");
-			c=c+1;
 		}
 		if (ans == 3) 
 		{
@@ -53,7 +51,6 @@ public class ALittleQuiz
 		if (ans == 1) 
 		{
 			System.out.println("Special salamence FTW! Correct!");
-			c=c+1;
 		}
 		if (ans == 2) 
 		{
@@ -63,8 +60,6 @@ public class ALittleQuiz
 		{
 			System.out.println("What are you doing, Mantine Surf? ");
 		}
-		
-		System.out.println("Overall, you got " + c + " questions correct. Thanks for playing! [I guess] ");
 		keyboard.close();
 	}
 	
