@@ -8,7 +8,7 @@ public class Magic8Ball
 	{
 		Random r = new Random();
  
-		int choice = 1 + r.nextInt(20);
+		int choice = 1 + r.nextInt(15);
 		String response = "";
  
 		if ( choice == 1 )
@@ -44,7 +44,7 @@ public class Magic8Ball
 		else if ( choice == 16 )
 			response = "3.14159265358979323846264338327950288419716939937510582097494";
 		else if ( choice == 17)
-			response = "The chances are equal to evolving a pokemon while it is holding an eviolite. ";
+			response = "The chances of you succeeding are equal to evolving a pokemon while it is holding an eviolite. ";
 		else if ( choice == 18 )
 			response = "Illuminati confirmed. ";
 		else if ( choice == 19 )
