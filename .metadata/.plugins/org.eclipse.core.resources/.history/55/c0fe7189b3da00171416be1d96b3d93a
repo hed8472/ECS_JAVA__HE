@@ -25,7 +25,7 @@ public class KeepGuessingCounter {
 		}
 		
 	System.out.println("That is correct. You are an okay guesser I guess.");
-	System.out.println("It ONLY took you "+(c+1)+" tries.");
+	System.out.println("it ONLY took you "+(c+1)+" tries.");
 	keyboard.close();
 	}
 }
