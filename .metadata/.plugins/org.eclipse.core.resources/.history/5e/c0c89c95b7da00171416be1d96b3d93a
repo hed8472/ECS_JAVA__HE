@@ -1,5 +1,6 @@
 package assignment_6;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class CollatzSequence 

@@ -2,7 +2,7 @@ package assignment_6;
 
 import java.util.Scanner;
 
-public class CollatzSequence 
+public class BetterCollatz 
 {
 	public static void main( String[] args)
 	{
@@ -14,9 +14,11 @@ public class CollatzSequence
 		System.out.println("Repeat until you reach 1. ");
 		System.out.println();
 		
-		System.out.print("Starting Number:");
+		System.out.print("Starting Number: ");
 		
-		int a;
+		int a,b,c;
+		b=0;
+		c=0;
 		Scanner keyboard = new Scanner(System.in);
 		a = keyboard.nextInt();
 		System.out.print("[ " + a + " - ");
@@ -30,9 +32,16 @@ public class CollatzSequence
 			{
 				a = (a*3)+1;
 			}
+			if (a>c) 
+			{
+				c = a;
+			}
 			System.out.print(a+" - ");
+			b=b+1;
 		}
-		System.out.print("Success! ]");
+		System.out.println("Success! ]");
+		System.out.println("Terminated after "+b+" steps.");
+		System.out.println("The largest number was " + c +".");
 		keyboard.close();
 	}
 }
