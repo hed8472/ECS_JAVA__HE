@@ -8,7 +8,7 @@ public class MethodPass {
 		int a = keyboard.nextInt();
 		dostuff(a);
 		
-		keyboard.close();
+		
 	}
 	public static void dostuff (int b)
 	{
@@ -18,6 +18,5 @@ public class MethodPass {
 			System.out.println("That number is Metagross...");
 			
 	}
-	
 }
 
