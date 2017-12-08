@@ -1,0 +1,22 @@
+package assignment_8;
+import java.util.Scanner;
+public class MethodPass {
+	public static void main (String[]args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		System.out.print ("Pick a number: ");
+		int a = keyboard.nextInt();
+		dostuff(a);
+		
+		
+	}
+	public static void dostuff (int b)
+	{
+		if (b%3==0)
+			System.out.println("I like that number!");
+		else
+			System.out.println("That number is Metagross...");
+			
+	}
+}
+
