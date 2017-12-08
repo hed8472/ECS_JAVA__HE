@@ -17,6 +17,5 @@ public class BabyCalc {
 		System.out.println();
 		
 		System.out.println("You want to (" + opp + "): " + num1 + " and " + num2 + ".");
-		keyboard.close();
 	}
 }
