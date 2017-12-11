@@ -6,32 +6,32 @@ public class Calculator {
 		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.print("Give me a math procedure: ");
-		double num1 = keyboard.nextDouble();
+		int num1 = keyboard.nextInt();
 		String opp = keyboard.next();
-		double num2 = keyboard.nextDouble();
+		int num2 = keyboard.nextInt();
 		System.out.println();
-		double o = operation(num1, opp, num2);
-		System.out.println(o);
+		
+		
 		keyboard.close();
 	}
-	public static double operation (double a, String b,double c)
+	public static double operation (int a, String b,int c)
 	{
-		double ans = a;
-		if (b.equals("+")) {
+		int ans = a;
+		if (b == "+") {
 			ans = a + c;
 		}
-		if (b.equals("-")) {
+		if (b == "-") {
 			ans = a - c;
 		}
-		if (b.equals("*")) {
+		if (b == "*") {
 			ans = a * c;
 		}
-		if (b.equals("/")) {
+		if (b == "/") {
 			ans = a / c;
 		}
-		if (b.equals("^")) {
+		if (b == "^") {
 			ans = 1;
-			for ( int n = 0 ; n < c ; n++ )
+			for ( int n = 0 ; n <= c ; n++ )
 			{
 				ans = ans*a;
 			}	

@@ -6,9 +6,9 @@ public class Calculator {
 		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.print("Give me a math procedure: ");
-		double num1 = keyboard.nextDouble();
+		int num1 = keyboard.nextInt();
 		String opp = keyboard.next();
-		double num2 = keyboard.nextDouble();
+		int num2 = keyboard.nextInt();
 		System.out.println();
 		double o = operation(num1, opp, num2);
 		System.out.println(o);
