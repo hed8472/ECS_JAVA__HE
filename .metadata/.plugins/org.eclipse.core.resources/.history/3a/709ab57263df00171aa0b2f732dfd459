@@ -74,7 +74,7 @@ public class Keychains {
 		System.out.println("");
 		System.out.println("CHECKOUT");
 		System.out.println("");
-		System.out.print("What is your name? ");
+		System.out.print("What is your name?");
 		String name = insert.next();
 		System.out.println("You have " + in + " keychain(s).");
 		System.out.println("Keychains cost $10 each. ");

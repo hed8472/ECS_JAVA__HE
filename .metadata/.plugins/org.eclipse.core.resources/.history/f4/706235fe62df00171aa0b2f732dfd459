@@ -30,11 +30,6 @@ public class Keychains {
 			{
 				view(keychains);
 			}
-			if (choice == 4)
-			{
-				checkout(keychains);
-			}
-
 		}
 		keyboard.close();
 	}
@@ -71,15 +66,14 @@ public class Keychains {
 	public static void checkout (int in)
 	{
 		Scanner insert = new Scanner(System.in);
+		System.out.println("Checkout");
 		System.out.println("");
-		System.out.println("CHECKOUT");
-		System.out.println("");
-		System.out.print("What is your name? ");
+		System.out.print("What is your name?");
 		String name = insert.next();
-		System.out.println("You have " + in + " keychain(s).");
+		System.out.println("You have " + in + "keychain(s).");
 		System.out.println("Keychains cost $10 each. ");
 		System.out.println("Total cost is $"+(in*10) + ".");
-		System.out.println("Thank you for your order, " + name +"!");
+		System.out.println("Thank you for your order," + name);
 		
 			
 	}

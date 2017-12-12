@@ -30,12 +30,8 @@ public class Keychains {
 			{
 				view(keychains);
 			}
-			if (choice == 4)
-			{
-				checkout(keychains);
-			}
-
 		}
+		
 		keyboard.close();
 	}
 	public static int add (int in)
@@ -43,10 +39,10 @@ public class Keychains {
 		int out = 0;
 		Scanner insert = new Scanner(System.in);
 		System.out.println("");
-		System.out.print("You have " + in + " keychain(s). How many to add? ");
+		System.out.print("You have " + in + " keychains. How many to add? ");
 		out = insert.nextInt();
 		out = out + in;
-		System.out.println("You now have " + out + " keychain(s). ");
+		System.out.println("You now have " + out + " keychains. ");
 		System.out.println("");
 		return out;
 	}
@@ -55,32 +51,31 @@ public class Keychains {
 		int out = 0;
 		Scanner insert = new Scanner(System.in);
 		System.out.println("");
-		System.out.print("You have " + in + " keychain(s). How many to remove? ");
+		System.out.print("You have " + in + " keychains. How many to remove? ");
 		out = insert.nextInt();
 		out = in - out;
-		System.out.println("You now have " + out + " keychain(s). ");
+		System.out.println("You now have " + out + " keychains. ");
 		System.out.println("");
 		return out;
 	}
 	public static void view (int in)
 	{
 		System.out.println("");
-		System.out.println("You have "+ in + " keychain(s). ");
+		System.out.println("You have "+ in + " keychains. ");
 		System.out.println("");
 	}
 	public static void checkout (int in)
 	{
 		Scanner insert = new Scanner(System.in);
+		System.out.println("Checkout");
 		System.out.println("");
-		System.out.println("CHECKOUT");
-		System.out.println("");
-		System.out.print("What is your name? ");
+		System.out.print("What is your name?");
 		String name = insert.next();
-		System.out.println("You have " + in + " keychain(s).");
+		System.out.println("You have " + in + "keychains.");
 		System.out.println("Keychains cost $10 each. ");
 		System.out.println("Total cost is $"+(in*10) + ".");
-		System.out.println("Thank you for your order, " + name +"!");
-		
+
+
 			
 	}
 }
